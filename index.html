@@ -12,6 +12,8 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
         .attribution {
             text-align: center;
             font-size: 11px;
@@ -24,6 +26,7 @@
         body {
             margin: 0;
             background-color: hsl(0, 0%, 8%);
+            font-family: 'Inter', sans-serif;
         }
 
         .container {
@@ -48,12 +51,21 @@
             width: 50%;
         }
 
+        .card__name {
+            font-weight: 700;
+        }
+
         p {
             font-size: 14px;
         }
 
         .card__location {
             color: hsl(75, 94%, 57%);
+            font-weight: 600;
+        }
+
+        .card__description {
+            font-weight: 400;
         }
 
         .card__social-links {
@@ -62,7 +74,7 @@
             gap: 10px;
         }
 
-        .card__social-link{
+        .card__social-link {
             height: 30px;
             background-color: hsl(0, 0%, 20%);
             color: white;
@@ -82,7 +94,7 @@
             <div class="card__content">
                 <h1 class="card__name">Jessica Randall</h1>
                 <p class="card__location">London, United Kingdom</p>
-                <p class="card__description">Front-end developer and avid reader.</p>
+                <p class="card__description">"Front-end developer and avid reader."</p>
                 <div class="card__social-links">
                     <button class="card__social-link">GitHub</button>
                     <button href="#" class="card__social-link">Frontend Mentor</button>
